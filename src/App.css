@@ -1,0 +1,65 @@
+:root {
+  color-scheme: light;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.chat-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px 48px;
+  background: #fff;
+}
+
+.chat-card {
+  width: min(1080px, 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.chat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bubble-list {
+  max-height: calc(70vh);
+}
+
+.composer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.02);
+  border: 1px solid rgba(15, 23, 42, 0.06);
+}
+
+.composer-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media (max-width: 768px) {
+  .chat-page {
+    padding: 18px 12px 28px;
+  }
+
+  .chat-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .bubble-list {
+    max-height: none;
+  }
+}
